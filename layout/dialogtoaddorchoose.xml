@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<com.google.android.material.card.MaterialCardView
+    android:layout_width="@dimen/_170sdp"
+    android:layout_height="@dimen/_140sdp"
+    android:backgroundTint="@color/maingreen"
+    app:strokeColor="@color/white">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose One To Continue"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/_10sdp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_10sdp"
+        >
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add New"
+            android:id="@+id/addnew"
+            app:cornerRadius="@dimen/_5sdp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/maingreen"
+            app:rippleColor="@color/maingreen"
+            android:textSize="@dimen/_10sdp"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Patient"
+            app:cornerRadius="@dimen/_5sdp"
+            android:backgroundTint="@color/white"
+            app:rippleColor="@color/maingreen"
+            android:textColor="@color/maingreen"
+            android:textSize="@dimen/_10sdp"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
+</LinearLayout>

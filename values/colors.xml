@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="darkblue">#07161B</color>
+    <color name="navygreen">#3D737F</color>
+    <color name="navygreen1">#3B8798</color>
+    <color name="offwhite">#CEC7BF</color>
+    <color name="orange">#FF921D</color>
+    <color name="lightviolet">#D6B4FC</color>
+    <color name="frenchviolet">#8806CE</color>
+    <color name="background_black">#202020</color>
+    <color name="lightgreen">#EBFD60</color>
+    <color name="lightblue">#CAD7EA</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="babyred">#FF6E6E</color>
+    <color name="lightbeige">#F7F7F7</color>
+    <color name="goldenyello">#FFD100</color>
+    <color name="lightyellow">#FFF4C0</color>
+    <color name="maingreen">#4EBF52</color>
+    <color name="anothergreen">#4CBC51</color>
+</resources>
