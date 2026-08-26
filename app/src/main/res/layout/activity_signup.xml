@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_black"
+    tools:context=".signup">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGNUP"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/animationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.626">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Name:"
+            android:textColor="@color/maingreen"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/signupfirst"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round"
+            android:ems="13"
+            android:hint="Enter your first name"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/lightblue"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Last Name:"
+            android:textColor="@color/maingreen"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/signuplast"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round"
+            android:ems="13"
+            android:hint="Enter your last name"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/lightblue"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Email Id:"
+            android:textColor="@color/maingreen"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/signupemail"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round"
+            android:ems="13"
+            android:hint="Enter your Email Id"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/lightblue"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Password:"
+            android:textColor="@color/maingreen"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/signuppassword"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round"
+            android:ems="13"
+            android:hint="Enter a strong password"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/lightblue"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/alreadyacoount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Have An Account? Click Here To Login"
+        android:textColor="@color/maingreen"
+        android:textSize="@dimen/_11sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/linearlayout1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/continuelogin"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alreadyacoount"
+        app:layout_constraintVertical_bias="0.34"
+        app:rippleColor="@color/maingreen"
+        app:strokeColor="@color/maingreen"
+        app:strokeWidth="2dp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/right_arrow"
+        android:id="@+id/loginrightarrow"
+        app:layout_constraintBottom_toBottomOf="@id/continuelogin"
+        app:layout_constraintEnd_toEndOf="@+id/continuelogin"
+        app:layout_constraintStart_toStartOf="@+id/continuelogin"
+        app:layout_constraintTop_toTopOf="@+id/continuelogin" />
+
+    <ProgressBar
+        android:id="@+id/loadinglogin"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:indeterminateTint="@color/maingreen"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/continuelogin"
+        app:layout_constraintEnd_toEndOf="@+id/continuelogin"
+        app:layout_constraintStart_toStartOf="@+id/continuelogin"
+        app:layout_constraintTop_toTopOf="@+id/continuelogin" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="193dp"
+        android:layout_height="136dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearlayout1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.776"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/animation" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

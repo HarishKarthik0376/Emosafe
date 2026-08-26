@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomBottomRoundedCardView" parent="Widget.MaterialComponents.CardView">
+        <item name="shapeAppearance">@style/CustomShapeAppearance</item>
+    </style>
+
+    <style name="CustomShapeAppearance" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeBottomLeft">@dimen/_18sdp</item>
+        <item name="cornerSizeBottomRight">@dimen/_18sdp</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
+    </style>
+</resources>
